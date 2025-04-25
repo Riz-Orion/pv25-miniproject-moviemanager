@@ -60,19 +60,19 @@ class MovieManager(QWidget):
         self.add_button = QPushButton("Add Movie")
         self.add_button.clicked.connect(self.add_movie)
         self.add_button.setFixedHeight(30)
-        self.add_button.setStyleSheet("background-color: #28a745; color: white;")  # Hijau
+        self.add_button.setStyleSheet("background-color: #28a745; color: white;")
         btn_layout.addWidget(self.add_button)
 
         self.update_button = QPushButton("Update Movie")
         self.update_button.clicked.connect(self.update_movie)
         self.update_button.setFixedHeight(30)
-        self.update_button.setStyleSheet("background-color: #ffc107; color: white;")  # Kuning
+        self.update_button.setStyleSheet("background-color: #ffc107; color: white;")
         btn_layout.addWidget(self.update_button)
 
         self.clear_button = QPushButton("Clear List")
         self.clear_button.clicked.connect(self.clear_list)
         self.clear_button.setFixedHeight(30)
-        self.clear_button.setStyleSheet("background-color: #dc3545; color: white;")  # Merah
+        self.clear_button.setStyleSheet("background-color: #dc3545; color: white;")
         btn_layout.addWidget(self.clear_button)
 
         layout.addLayout(btn_layout)
